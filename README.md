@@ -1,77 +1,90 @@
 <div align="center">
-  <h1>Simple_Insightface</h1>
+  <h1>✨ Simple_Insightface ✨</h1>
 </div>
 
-## Pendahuluan
+<p align="center">
+  Kumpulan notebook Google Colab untuk eksperimen <i>face swapping</i> yang mudah digunakan dengan pustaka InsightFace.
+</p>
 
-Selamat datang di repositori **Simple_Insightface**! Repositori ini berisi kumpulan notebook Google Colab yang dirancang untuk memudahkan pengguna dalam melakukan eksperimen _face swapping_ (pertukaran wajah) menggunakan pustaka populer `InsightFace`.
+---
 
-Tujuan utama dari proyek ini adalah menyediakan alat yang siap pakai, di mana pengguna tidak perlu repot mengunduh file model secara manual. Cukup siapkan gambar sumber (wajah yang ingin digunakan) dan gambar/video target, lalu jalankan notebooknya.
+## 🚀 Pendahuluan
 
-Saat ini tersedia dua notebook utama:
-1.  **Face Swap Gambar-ke-Gambar**: Menukar wajah dari satu gambar ke gambar lainnya.
-2.  **Face Swap Gambar-ke-Video (File)**: Menukar wajah dari sebuah gambar ke setiap frame dalam sebuah file video.
+Selamat datang di repositori **Simple_Insightface**! 
 
-## Fitur Utama
+Repositori ini bertujuan untuk menyediakan alat _face swapping_ (pertukaran wajah) yang siap pakai dan mudah diakses melalui Google Colab. Keunggulan utama adalah pengguna tidak perlu lagi direpotkan dengan pengunduhan file model secara manual; notebook akan menanganinya secara otomatis. Cukup siapkan gambar sumber dan target Anda, lalu biarkan keajaiban terjadi!
 
-* **Siap Digunakan di Google Colab**: Dirancang khusus untuk kemudahan penggunaan di lingkungan Google Colab.
-* **Unduhan Model Otomatis**: Notebook secara otomatis akan mengunduh model-model yang diperlukan (termasuk `inswapper_128.onnx` dari Hugging Face) saat pertama kali dijalankan. Anda tidak perlu mengunduh model secara manual.
-* **Dukungan untuk Berbagai Skenario**:
-    * Pertukaran wajah antara dua gambar statis.
-    * Pertukaran wajah dari gambar ke file video.
-* **Menggunakan InsightFace**: Ditenagai oleh pustaka `InsightFace` yang canggih untuk analisis dan pertukaran wajah.
-* **Prioritas GPU**: Kode akan mencoba menggunakan GPU jika tersedia di lingkungan Colab untuk pemrosesan yang lebih cepat.
+Saat ini, Anda akan menemukan dua notebook utama yang siap dieksplorasi:
+1.  🖼️ **Face Swap Gambar-ke-Gambar**: Menukar wajah antara dua gambar.
+2.  🎬 **Face Swap Gambar-ke-Video (File)**: Mengaplikasikan wajah dari gambar sumber ke setiap frame dalam sebuah file video.
 
-## Notebook yang Tersedia
+## 🌟 Fitur Utama
+
+* **🚀 Siap Digunakan di Google Colab**: Dirancang khusus untuk berjalan mulus di lingkungan Google Colab.
+* **⚙️ Unduhan Model Otomatis**: Model-model penting (termasuk `inswapper_128.onnx` dari Hugging Face) akan diunduh secara otomatis oleh notebook.
+* **🖼️➡️🖼️ Dukungan Gambar-ke-Gambar**: Lakukan pertukaran wajah antara dua gambar statis dengan mudah.
+* **🖼️➡️🎬 Dukungan Gambar-ke-Video (File)**: Aplikasikan wajah dari gambar ke seluruh frame dalam file video yang Anda unggah.
+* **🧠 Ditenagai InsightFace**: Memanfaatkan kehebatan pustaka `InsightFace` untuk analisis dan pertukaran wajah berkualitas.
+* **⚡ Prioritas GPU**: Kode secara otomatis mencoba memanfaatkan GPU di Colab untuk akselerasi pemrosesan.
+
+---
+
+## 📖 Notebook yang Tersedia
 
 ### 1. `FaceSwap_Image_to_Image.ipynb`
-
-* **Deskripsi**: Notebook ini memungkinkan Anda untuk mengambil wajah dari "gambar sumber" dan menempelkannya ke wajah yang terdeteksi pada "gambar target".
-* **Cara Menggunakan**:
-    1.  Buka file `FaceSwap_Image_to_Image.ipynb` di Google Colab.
-    2.  Jalankan sel-sel kode secara berurutan dari atas ke bawah.
-    3.  **PENTING**: Setelah menjalankan sel instalasi library pertama, **restart runtime Colab** (`Runtime` > `Restart runtime`).
-    4.  Saat diminta, unggah gambar sumber Anda (yang berisi wajah asli).
-    5.  Kemudian, unggah gambar target Anda (gambar tempat wajah akan diganti).
-    6.  Hasilnya akan ditampilkan di dalam notebook.
+   * **Deskripsi**: Notebook ini memungkinkan Anda untuk mengambil wajah dari "gambar sumber" dan menempelkannya ke wajah yang terdeteksi pada "gambar target".
+   * **Cara Menggunakan**:
+        1. Buka file `FaceSwap_Image_to_Image.ipynb` di Google Colab.
+        2. Jalankan sel-sel kode secara berurutan dari atas ke bawah.
+        3. **PENTING**: Setelah menjalankan sel instalasi library (`!pip install ...`), **restart runtime Colab** melalui menu `Runtime` > `Restart runtime`.
+        4. Unggah gambar sumber Anda (yang berisi wajah asli) saat diminta oleh notebook.
+        5. Selanjutnya, unggah gambar target Anda (gambar di mana wajah akan diganti).
+        6. Hasil pertukaran wajah akan ditampilkan langsung di dalam output notebook.
 
 ### 2. `FaceSwap_Image_to_Video_File.ipynb`
+   * **Deskripsi**: Dengan notebook ini, Anda dapat mengambil wajah dari "gambar sumber" dan mengaplikasikannya ke wajah yang terdeteksi pada setiap frame dari "file video target" yang Anda unggah. Video hasil akan disimpan dan dapat diunduh.
+   * **Cara Menggunakan**:
+        1. Buka file `FaceSwap_Image_to_Video_File.ipynb` di Google Colab.
+        2. Jalankan sel-sel kode secara berurutan.
+        3. **PENTING**: Setelah menjalankan sel instalasi library, jangan lupa untuk **restart runtime Colab**.
+        4. Unggah gambar sumber Anda ketika diminta.
+        5. Unggah file video target yang ingin Anda proses.
+        6. Proses _face swapping_ akan berjalan frame per frame (ini mungkin memakan waktu, tergantung durasi dan resolusi video).
+        7. Video hasil (yang tidak menyertakan audio asli) akan disimpan di lingkungan Colab dan siap untuk Anda unduh.
 
-* **Deskripsi**: Notebook ini mengambil wajah dari "gambar sumber" dan menempelkannya ke wajah yang terdeteksi pada setiap frame dari "file video target" yang Anda unggah. Video hasil akan disimpan dan bisa diunduh.
-* **Cara Menggunakan**:
-    1.  Buka file `FaceSwap_Image_to_Video_File.ipynb` di Google Colab.
-    2.  Jalankan sel-sel kode secara berurutan.
-    3.  **PENTING**: Setelah menjalankan sel instalasi library pertama, **restart runtime Colab** (`Runtime` > `Restart runtime`).
-    4.  Unggah gambar sumber Anda saat diminta.
-    5.  Unggah file video target Anda saat diminta.
-    6.  Proses akan berjalan frame per frame (mungkin memakan waktu untuk video panjang).
-    7.  Video hasil (tanpa audio) akan disimpan di lingkungan Colab dan siap diunduh.
+---
 
-## Cara Menggunakan (Instruksi Umum)
+## 🛠️ Cara Menggunakan (Instruksi Umum)
 
-1.  **Buka di Google Colab**: Klik pada file `.ipynb` yang ingin Anda gunakan di repositori ini dan pilih "Open in Colab".
-2.  **Atur Runtime (Opsional, tapi Direkomendasikan)**: Untuk performa terbaik, disarankan untuk menggunakan GPU. Di Colab, pilih `Runtime` > `Change runtime type` > `Hardware accelerator` > `GPU`.
-3.  **Jalankan Sel**: Jalankan setiap sel kode secara berurutan. Ikuti instruksi yang ada di dalam notebook, terutama untuk mengunggah file.
-4.  **Restart Runtime**: Ingat untuk me-restart runtime setelah sel instalasi library awal (`!pip install ...`) selesai dijalankan.
+1.  **Buka di Google Colab**: Klik pada file `.ipynb` pilihan Anda di repositori ini, lalu pilih opsi "Open in Colab".
+2.  **Atur Runtime ke GPU (Sangat Direkomendasikan)**: Untuk performa yang jauh lebih baik, pastikan Anda menggunakan akselerator GPU. Di Google Colab, navigasi ke `Runtime` > `Change runtime type`, lalu pada `Hardware accelerator`, pilih `GPU` dan simpan.
+3.  **Jalankan Sel secara Berurutan**: Ikuti alur notebook dengan menjalankan setiap sel kode dari atas ke bawah. Perhatikan instruksi di dalam notebook, terutama saat diminta untuk mengunggah file.
+4.  **Restart Runtime Awal**: Selalu ingat untuk me-restart runtime Colab setelah sel yang berisi perintah `!pip install ...` selesai dijalankan. Ini memastikan semua library terinstal dengan benar.
 
-## Pernyataan Penggunaan
+---
 
-Modul-modul dalam repositori ini adalah bagian dari proses pembelajaran mandiri saya dan dikembangkan untuk tujuan edukasi serta eksplorasi teknologi _face swapping_.
+## 📜 Pernyataan Penggunaan & Lisensi
 
-Semua kode dan notebook di sini **bebas untuk digunakan, dimodifikasi, dan didistribusikan oleh siapapun**. Saya berharap ini bisa bermanfaat bagi orang lain yang juga sedang belajar atau ingin mencoba teknologi ini.
+Repositori dan notebook di dalamnya merupakan bagian dari eksplorasi dan pembelajaran mandiri saya dalam bidang _computer vision_ dan _deep learning_, khususnya teknologi _face swapping_. Proyek ini dibuat dengan tujuan edukasi dan untuk berbagi pengetahuan.
 
-Meskipun demikian, harap gunakan teknologi ini secara bertanggung jawab dan etis.
+Semua konten di sini **bebas untuk digunakan, dimodifikasi, dan didistribusikan oleh siapa pun** (Lisensi MIT atau sejenisnya bisa Anda tambahkan jika mau). Saya senang jika ini bisa bermanfaat bagi rekan-rekan lain yang tertarik untuk belajar atau bereksperimen.
 
-## Sumber dan Referensi
+> **Catatan Etika**: Harap gunakan teknologi _face swapping_ secara bertanggung jawab dan etis. Hindari penggunaan yang dapat merugikan, menyesatkan, atau melanggar privasi individu lain.
 
-Berikut adalah beberapa sumber daya dan pustaka utama yang digunakan atau terkait dengan proyek ini:
+---
+
+## 🔗 Sumber dan Referensi
+
+Berikut adalah beberapa sumber daya dan pustaka utama yang menjadi dasar atau inspirasi proyek ini:
 
 * **InsightFace (Official GitHub)**: [https://github.com/deepinsight/insightface](https://github.com/deepinsight/insightface)
-* **Model `inswapper_128.onnx` yang digunakan (Hugging Face)**: [https://huggingface.co/ezioruan/inswapper_128.onnx/tree/main](https://huggingface.co/ezioruan/inswapper_128.onnx/tree/main) (Tautan unduhan langsung yang digunakan dalam kode adalah `.../resolve/main/inswapper_128.onnx`)
+* **Model `inswapper_128.onnx` (Hugging Face)**: Repositori [ezioruan/inswapper_128.onnx](https://huggingface.co/ezioruan/inswapper_128.onnx/tree/main) (Link unduhan langsung yang digunakan: `.../resolve/main/inswapper_128.onnx`)
 * **ONNXRuntime**: [https://onnxruntime.ai/](https://onnxruntime.ai/)
 * **OpenCV**: [https://opencv.org/](https://opencv.org/)
 * **Google Colaboratory**: [https://colab.research.google.com/](https://colab.research.google.com/)
 
 ---
 
-Saran dan kontribusi untuk perbaikan repositori ini sangat dipersilakan!
+<p align="center">
+  Saran dan kontribusi untuk pengembangan lebih lanjut sangat diterima! Fork repositori ini dan mari berkreasi bersama.
+</p>
