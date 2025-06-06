@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>✨ Simple_Insightface ✨</h1>
+  <img src="./Header.png" alt="Simple_Insightface Banner" width="700">
 </div>
 
 <p align="center">
@@ -67,7 +67,7 @@ Saat ini, Anda akan menemukan dua notebook utama yang siap dieksplorasi:
 
 Repositori dan notebook di dalamnya merupakan bagian dari eksplorasi dan pembelajaran mandiri saya dalam bidang _computer vision_ dan _deep learning_, khususnya teknologi _face swapping_. Proyek ini dibuat dengan tujuan edukasi dan untuk berbagi pengetahuan.
 
-Semua konten di sini **bebas untuk digunakan, dimodifikasi, dan didistribusikan oleh siapa pun** (Lisensi MIT atau sejenisnya bisa Anda tambahkan jika mau). Saya senang jika ini bisa bermanfaat bagi rekan-rekan lain yang tertarik untuk belajar atau bereksperimen.
+Semua konten di sini **bebas untuk digunakan, dimodifikasi, dan didistribusikan oleh siapa pun**. Saya senang jika ini bisa bermanfaat bagi rekan-rekan lain yang tertarik untuk belajar atau bereksperimen.
 
 > **Catatan Etika**: Harap gunakan teknologi _face swapping_ secara bertanggung jawab dan etis. Hindari penggunaan yang dapat merugikan, menyesatkan, atau melanggar privasi individu lain.
 
@@ -78,7 +78,7 @@ Semua konten di sini **bebas untuk digunakan, dimodifikasi, dan didistribusikan 
 Berikut adalah beberapa sumber daya dan pustaka utama yang menjadi dasar atau inspirasi proyek ini:
 
 * **InsightFace (Official GitHub)**: [https://github.com/deepinsight/insightface](https://github.com/deepinsight/insightface)
-* **Model `inswapper_128.onnx` (Hugging Face)**: Repositori [ezioruan/inswapper_128.onnx](https://huggingface.co/ezioruan/inswapper_128.onnx/tree/main) (Link unduhan langsung yang digunakan: `.../resolve/main/inswapper_128.onnx`)
+* **Model `inswapper_128.onnx` (Hugging Face)**: Repositori [ezioruan/inswapper_128.onnx](https://huggingface.co/ezioruan/inswapper_128.onnx/tree/main) (Tautan unduhan langsung yang digunakan: `.../resolve/main/inswapper_128.onnx`)
 * **ONNXRuntime**: [https://onnxruntime.ai/](https://onnxruntime.ai/)
 * **OpenCV**: [https://opencv.org/](https://opencv.org/)
 * **Google Colaboratory**: [https://colab.research.google.com/](https://colab.research.google.com/)
