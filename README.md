@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./asset/Header.png" alt="Simple_Insightface Banner" width="700">
+  <img src="./asset/Header_withbg.png" alt="Simple_Insightface Banner" width="700">
 </div>
 
 <p align="center">
